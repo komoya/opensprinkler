@@ -15,7 +15,7 @@ function snf(sid,sbit) {
     window.location="/sn"+(sid+1)+"=1"+"&t="+(mm*60+ss);  // turn it off with timer
   }
 }
-w("<b>Manual Control:</b> (timer is optional)<p></p>");
+w("<b>手动控制</b> (定时参数可选)<p></p>");
 w("<table border=1>");
 var bid,s,sid,sn,rem,remm,rems,sbit;
 for(bid=0;bid<nbrd;bid++){
