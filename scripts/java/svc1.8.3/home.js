@@ -13,10 +13,10 @@ function imgstr(s) {return "<img src=\"http://rayshobby.net/images/icons/svc_"+s
 function datestr(t) {var _t=tz-48; return (new Date(t)).toUTCString()+((_t>=0)?"+":"-")+(Math.abs(_t)/4>>0)+":"+((Math.abs(_t)%4)*15/10>>0)+((Math.abs(_t)%4)*15%10);}
 // print menu links
 w("<button style=\"height:44\" onclick=link(\"/\")>"+imgstr("reset")+"刷新</button>");
-w("<button style=\"height:44\" onclick=link(\"/vo\")>"+imgstr("options")+"Options</button>");
-w("<button style=\"height:44\" onclick=link(\"/vs\")>"+imgstr("edit")+"Stations</button>");
-w("<button style=\"height:44\" onclick=link(\"/vp\")>"+imgstr("cal")+"Programs</button>");
-w("<button style=\"height:44\" onclick=linkn(\"http://igoogle.wunderground.com/cgi-bin/findweather/getForecast?query="+loc+"\")>"+imgstr("weather")+"Weather</button><p></p>");
+w("<button style=\"height:44\" onclick=link(\"/vo\")>"+imgstr("options")+"选项</button>");
+w("<button style=\"height:44\" onclick=link(\"/vs\")>"+imgstr("edit")+"阀门站</button>");
+w("<button style=\"height:44\" onclick=link(\"/vp\")>"+imgstr("cal")+"工作程序</button>");
+w("<button style=\"height:44\" onclick=linkn(\"http://igoogle.wunderground.com/cgi-bin/findweather/getForecast?query="+loc+"\")>"+imgstr("weather")+"天气</button><p></p>");
 // print device information
 if(ver>=100) w("<b>Firmware version</b>: "+(ver/100>>0)+"."+((ver/10>>0)%10)+"."+(ver%10)+"<br>");
 else w("<b>Firmware version</b>: "+(ver/10>>0)+"."+(ver%10)+"<br>");
