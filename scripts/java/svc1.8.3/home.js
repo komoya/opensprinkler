@@ -12,7 +12,7 @@ function setrd(form,idx) {var h=prompt("Enter hours to delay","0");if(h!=null){f
 function imgstr(s) {return "<img src=\"http://rayshobby.net/images/icons/svc_"+s+".png\" height=20 align=absmiddle>&nbsp;";}
 function datestr(t) {var _t=tz-48; return (new Date(t)).toUTCString()+((_t>=0)?"+":"-")+(Math.abs(_t)/4>>0)+":"+((Math.abs(_t)%4)*15/10>>0)+((Math.abs(_t)%4)*15%10);}
 // print menu links
-w("<button style=\"height:44\" onclick=link(\"/\")>"+imgstr("reset")+"Refresh</button>");
+w("<button style=\"height:44\" onclick=link(\"/\")>"+imgstr("reset")+"刷新</button>");
 w("<button style=\"height:44\" onclick=link(\"/vo\")>"+imgstr("options")+"Options</button>");
 w("<button style=\"height:44\" onclick=link(\"/vs\")>"+imgstr("edit")+"Stations</button>");
 w("<button style=\"height:44\" onclick=link(\"/vp\")>"+imgstr("cal")+"Programs</button>");
