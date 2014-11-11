@@ -9,7 +9,7 @@ function link(s) {window.location=s;}
 function linkn(s){window.open(s, '_blank');}
 // input rain delay value
 function setrd(form,idx) {var h=prompt("Enter hours to delay","0");if(h!=null){form.elements[idx].value=h;form.submit()};}
-function imgstr(s) {return "<img src=\"https://github.com/komoya/opensprinkler/raw/master/images/icons/"+s+".png\" height=20 align=absmiddle>&nbsp;";}
+function imgstr(s) {return "<img src=\"https://github.com/komoya/opensprinkler/raw/master/images/icons/svc_"+s+".png\" height=20 align=absmiddle>&nbsp;";}
 function datestr(t) {var _t=tz-48; return (new Date(t)).toUTCString()+((_t>=0)?"+":"-")+(Math.abs(_t)/4>>0)+":"+((Math.abs(_t)%4)*15/10>>0)+((Math.abs(_t)%4)*15%10);}
 // print menu links
 w("<button style=\"height:44\" onclick=link(\"/\")>"+imgstr("reset")+"刷新</button>");
