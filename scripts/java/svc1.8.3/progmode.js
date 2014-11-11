@@ -11,9 +11,9 @@ function rsn() {
   if(p!=null) window.location="/cv?pw="+p+"&rsn=1";
 }
 
-w("<button style=\"height:32\" onclick=linkn(\"/gp?d=0\")>"+imgstr("preview")+"Program Preview</button>");
-w("<button style=\"height:32\" onclick=rsn()>"+imgstr("del")+"Stop All Stations</button>");
-w("<button style=\"height:32\" onclick=link(\"/vr\")>"+imgstr("start")+"Run-Once Program</button><br>");
+w("<button style=\"height:32\" onclick=linkn(\"/gp?d=0\")>"+imgstr("preview")+"程序预览</button>");
+w("<button style=\"height:32\" onclick=rsn()>"+imgstr("del")+"全部停止</button>");
+w("<button style=\"height:32\" onclick=link(\"/vr\")>"+imgstr("start")+"运行一次性程序</button><br>");
 w("<p><b>Station Status</b>:</p>");
 w("<table border=1>");
 var bid,s,sid,sn,rem,remm,rems,off,pname;
