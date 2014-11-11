@@ -38,8 +38,8 @@ w("<hr>");
 // print html form
 w("<form name=hf action=cv method=get><p>Password:<input type=password "+(ipas?"disabled":"")+" size=10 id=pwd name=pw></p>");
 w("<input type=hidden name=en><input type=hidden name=rd value=0><input type=hidden name=rbt value=0><input type=hidden name=mm value=0></form>");
-w("<button style=\"height:36\" onclick=\"hf.elements[1].value="+(1-en)+";hf.submit();\">"+imgstr(en?"stop":"start")+(en?"Stop Operation":"Start Operation")+"</button>");
-w("<button style=\"height:36\" onclick=\"hf.elements[4].value="+(1-mm)+";hf.submit();\">"+imgstr(mm?"auto":"manual")+(mm?"Manual Off":"Manual On")+"</button>");
+w("<button style=\"height:36\" onclick=\"hf.elements[1].value="+(1-en)+";hf.submit();\">"+imgstr(en?"stop":"start")+(en?"停止运行":"启动运行")+"</button>");
+w("<button style=\"height:36\" onclick=\"hf.elements[4].value="+(1-mm)+";hf.submit();\">"+imgstr(mm?"auto":"manual")+(mm?"手动关闭":"手动开启")+"</button>");
 w("<button style=\"height:36\" onclick=\"setrd(hf,2)\">"+imgstr("rain")+"Rain Delay</button>");
-w("<button style=\"height:36\" onclick=\"hf.elements[3].value=1;hf.submit();\">"+imgstr("reboot")+"Reboot</button>");
+w("<button style=\"height:36\" onclick=\"hf.elements[3].value=1;hf.submit();\">"+imgstr("reboot")+"重新启动</button>");
 w("<p></p><hr><br>");
