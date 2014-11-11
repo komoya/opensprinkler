@@ -23,7 +23,7 @@ else w("<b>Firmware version</b>: "+(ver/10>>0)+"."+(ver%10)+"<br>");
 w("<b>Device time</b>: "+datestr(devt*1000)+"<hr>");
 w("<script type=\"text/javascript\" src=\"https://github.com/komoya/opensprinkler/raw/master/scripts/java/svc1.8.3/"+((mm)?"manualmode.js":"progmode.js")+"\"></script>")
 // print status and other information
-w("<br><b>Operation</b>: "+(en?("on").fontcolor("green"):("OFF").fontcolor("red")));
+w("<br><b>运行状态</b>: "+(en?("on").fontcolor("green"):("OFF").fontcolor("red")));
 w("<br><b>Raindelay</b>: "+(rd?("ON").fontcolor("red")+" (till "+datestr(rdst*1000)+")":("off").fontcolor("black")));
 w("<br><b>Rainsense</b>: "+(urs?(rs?("Rain Detected").fontcolor("red"):("no rain").fontcolor("green")):"<font color=gray>n/a</font>"));
 w("<br><b>Water level</b>: <font color="+((wl==100)?"green":"red")+">"+wl+"\%</font>");
